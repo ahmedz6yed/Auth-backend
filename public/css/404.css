@@ -1,0 +1,80 @@
+/* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #f6d365, #fda085);
+  color: #333;
+  text-align: center;
+}
+
+.container {
+  max-width: 500px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease;
+}
+
+.error-code {
+  font-size: 8rem;
+  font-weight: bold;
+  color: #ff6b6b;
+  animation: bounce 1s infinite;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.home-btn {
+  text-decoration: none;
+  padding: 12px 25px;
+  background: #ff6b6b;
+  color: #fff;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.home-btn:hover {
+  background: #ff3b3b;
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
